@@ -20,37 +20,37 @@
 
 ---
 
-# Visão do Projeto
+## Visão do Projeto
 
 
-# Escopo do Sistema
+## Escopo do Sistema
 
 
-# Fontes de Requisitos
+## Fontes de Requisitos
 
 
-# Histórias de Usuário
+## Histórias de Usuário
 
 
-# Requisitos Funcionais
+## Requisitos Funcionais
 
 
-# Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 
-# Regras de Negócio
+## Regras de Negócio
 
 
-# Fluxos de Estados
+## Fluxos de Estados
 
 
-# Protótipos
+## Protótipos
 
 
-# Critérios de Aceitação
+## Critérios de Aceitação
 
 
-# Plano de Testes
+## Plano de Testes
 
 
-# Gestão do Projeto
+## Gestão do Projeto
