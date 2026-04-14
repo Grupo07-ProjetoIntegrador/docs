@@ -24,13 +24,12 @@
 
 ### 2.2 Problemas Identificados
 
-* A atual falta de centralização e automação faz com que o registro de presenças se perca em listas de papel ou ficheiros isolados.
-* Isso impossibilita a administração de cruzar o nível de engajamento das lojas com a sua performance real de vendas.
+  A atual falta de centralização e automação faz com que o registro de presenças se perca em listas de papel ou ficheiros isolados. Isso impossibilita a administração de cruzar o nível de engajamento das lojas com a sua performance real de vendas.
 
 ### 2.3 Objetivos do Sistema
 
-* Automatizar a importação de listas de presença através de upload de planilhas e criar um histórico visual no perfil de cada loja, metrificando o engajamento do lojista em treinamentos e palestras.
-* Criar uma aba de treinamentos que armazena todo o histórico de treinamentos/palestras.
+  Automatizar a importação de listas de presença através de upload de planilhas e criar um histórico visual no perfil de cada loja, metrificando o engajamento do lojista em treinamentos e palestras. Além disso, criar uma aba de treinamentos que armazena todo o histórico de treinamentos/palestras.
+
 
 ---
 
@@ -49,27 +48,24 @@
 
 ### 4.1 Dentro do Escopo
 
-* Registo de treinamentos e palestras (com Tema, Data e Conteúdo) em uma aba chamada “Treinamento”.
-* Controle de participação vinculando o representante à loja correspondente. Upload de planilhas de listas (em Excel).
-* Apresentação do histórico de participação no perfil da loja.
+Registro de treinamentos e palestras (com Tema, Data e Conteúdo) em uma aba chamada “Treinamento”. Controle de participação vinculando o representante à loja correspondente. Upload de planilhas de listas (em Excel). Apresentação do histórico de participação no perfil da loja.
 
 ### 4.2 Fora do Escopo
 
-* Não contemplará a inscrição de participantes diretamente no sistema, nem o envio automático de convites, notificações ou confirmações.
-* Sua atuação será restrita ao cadastro dos treinamentos e ao registo e acompanhamento das presenças importadas por planilha.
+Não contemplará a inscrição de participantes diretamente no sistema, nem o envio automático de convites, notificações ou confirmações. Sua atuação será restrita ao cadastro dos treinamentos e ao registo e acompanhamento das presenças importadas por planilha.
 
 ### 4.3 Descrição Geral do Produto
 
-* Um submódulo focado na inteligência de relacionamento, que transforma as planilhas de presença num histórico associado ao LUC (Loja de Uso Comercial), permitindo avaliar o grau de parceria da loja.
+Um submódulo focado na inteligência de relacionamento, que transforma as planilhas de presença num histórico associado ao LUC (Loja de Uso Comercial), permitindo avaliar o grau de parceria da loja.
 
 ---
 
 ## 5. Histórias de Usuário
 
 ### Funcionalidade #01:
-**COMO:** Analista de relacionamento.
-**QUERO:** Fazer o upload de uma planilha com a lista de presenças.
-**PARA:** Registar de forma massiva e rápida quais os funcionários que compareceram.
+**COMO:** Analista de relacionamento.  
+**QUERO:** Fazer o upload de uma planilha com a lista de presenças.  
+**PARA:** Registar de forma massiva e rápida quais os funcionários que compareceram.  
 
 #### Critérios de Aceitação (Faremos depois)
 * **DADO:**
@@ -79,9 +75,9 @@
 ---
 
 ### Funcionalidade #02:
-**COMO:** Gestor de treinamento do shopping.
-**QUERO:** Registar um novo evento definindo o Tema, Data e Conteúdo.
-**PARA:** Criar uma base de dados organizado das ações de treinamento/palestras oferecidas no ano.
+**COMO:** Gestor de treinamento do shopping.  
+**QUERO:** Registar um novo evento definindo o Tema, Data e Conteúdo.  
+**PARA:** Criar uma base de dados organizado das ações de treinamento/palestras oferecidas no ano.  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -91,9 +87,9 @@
 ---
 
 ### Funcionalidade #03:
-**COMO:** Gerente de Relacionamento.
-**QUERO:** Visualizar o histórico completo de participação em treinamentos no perfil de uma loja.
-**PARA:** Entender o nível de engajamento do lojista.
+**COMO:** Gerente de Relacionamento.  
+**QUERO:** Visualizar o histórico completo de participação em treinamentos no perfil de uma loja.  
+**PARA:** Entender o nível de engajamento do lojista.  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -103,9 +99,9 @@
 ---
 
 ### Funcionalidade #04:
-**COMO:** Gestor de treinamento
-**QUERO:** Visualizar os detalhes de um treinamento
-**PARA:** Verificar quais lojas e representantes participaram
+**COMO:** Gestor de treinamento  
+**QUERO:** Visualizar os detalhes de um treinamento  
+**PARA:** Verificar quais lojas e representantes participaram  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -115,9 +111,9 @@
 ---
 
 ### Funcionalidade #05:
-**COMO:** Analista de relacionamento
-**QUERO:** Filtrar treinamentos por tema ou data
-**PARA:** Localizar eventos rapidamente
+**COMO:** Analista de relacionamento  
+**QUERO:** Filtrar treinamentos por tema ou data  
+**PARA:** Localizar eventos rapidamente  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -127,9 +123,9 @@
 ---
 
 ### Funcionalidade #06:
-**COMO:** Gestor de treinamento
-**QUERO:** Exportar relatório de participação
-**PARA:** Analisar o engajamento dos lojistas
+**COMO:** Gestor de treinamento  
+**QUERO:** Exportar relatório de participação  
+**PARA:** Analisar o engajamento dos lojistas  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -139,9 +135,9 @@
 ---
 
 ### Funcionalidade #07:
-**COMO:** Analista de relacionamento
-**QUERO:** Baixar o modelo de planilha
-**PARA:** Garantir que o upload siga o formato correto
+**COMO:** Analista de relacionamento  
+**QUERO:** Baixar o modelo de planilha  
+**PARA:** Garantir que o upload siga o formato correto  
 
 #### Critérios de Aceitação
 * **DADO:**
@@ -151,9 +147,9 @@
 ---
 
 ### Funcionalidade #08:
-**COMO:** Analista de relacionamento
-**QUERO:** Visualizar um indicador percentual de presença da loja em relação ao total de treinamentos do período.
-**PARA:** Classificar o nível de engajamento do lojista antes de uma reunião de negociação.
+**COMO:** Analista de relacionamento  
+**QUERO:** Visualizar um indicador percentual de presença da loja em relação ao total de treinamentos do período.  
+**PARA:** Classificar o nível de engajamento do lojista antes de uma reunião de negociação.  
 
 #### Critérios de Aceitação
 * **DADO:**
