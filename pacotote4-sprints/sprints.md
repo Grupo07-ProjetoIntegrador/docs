@@ -71,13 +71,14 @@ Desenvolver um ecossistema digital com padrão Premium para centralizar a gestã
 Estruturar a base de dados do sistema, permitir a criação de treinamentos e entregar a funcionalidade central de apontamento de presenças de forma manual.
 
 ### ENTREGÁVEIS DA SPRINT
-- [ ] **Entregável 1:** Banco de Dados configurado e criação de treinamentos funcional.
-- [ ] **Entregável 2:** Inserção manual e exclusão de presenças dentro de um Treinamento.
-- [ ] **Entregável 3:** Importação Inteligente de Planilhas (CSV/Excel) com sanitização de dados e download de modelo.
-- [ ] **Entregável 4:** Criar o sistema de lista e adição de treinamentos.  
-- [ ] **Entregável 5:** Layout Base do CRM (Sidebar, Headers, Padrão de Cores e Zero Emojis).
+- [ ] **Entregável 1:** Banco de Dados configurado e hospedado na nuvem.
+- [ ] **Entregável 2:** Módulo de cadastro de treinamentos com CRUD.
+- [ ] **Entregável 3:** Criar a listagem de treinamentos na página inicial.  
+- [ ] **Entregável 4:** Inserção de presença por importação de Planilhas (CSV/Excel) com sanitização de dados.
+- [ ] **Entregável 5:** Inserção manual e exclusão de presenças dentro de um Treinamento.  
+- [ ] **Entregável 6:** Ajustes no layout Base do CRM (Sidebar, Headers, Padrão de Cores e Zero Emojis).
 
-### REQUISITOS (Conforme Documentação)
+### REQUISITOS 
 - [ ] **RF-01:** Registro de treinamento com campos para Tema, Data, Conteúdo.
 - [ ] **RF-02:** Upload de arquivos de planilha para registro de presenças.
 - [ ] **RF-03:** Leitura de planilha e vínculo automático de representantes via código LUC.
@@ -106,7 +107,7 @@ Estruturar a base de dados do sistema, permitir a criação de treinamentos e en
 **Período:** 18/05 a 31/05
 
 ### OBJETIVO DA SPRINT
-Dar vida ao sistema. Interligar as lojas aos treinamentos através da tabela de presenças, desenvolver a visualização de Calendário e conectar a matemática de KPIs ao Dashboard Estratégico.
+Dar vida ao sistema. Interligar as lojas aos treinamentos através da tabela de presenças, desenvolver a visualização de Dashboard Estratégico.
 
 ### ENTREGÁVEIS DA SPRINT
 - [ ] **Entregável 1:** Aba de perfil da loja contendo seu histórico de participação.
