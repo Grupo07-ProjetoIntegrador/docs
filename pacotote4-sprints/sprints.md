@@ -15,18 +15,12 @@ Desenvolver um ecossistema digital com padrão Premium para centralizar a gestã
 
 ## PRODUTOS DO ENTREGÁVEL 1
 - [ ] **Banco de dados relacional** estruturado na nuvem (Supabase) com 3 tabelas centrais (Lojas, Treinamentos, Presenças).
+- [ ] **Módulo de registro de treinamentos** (registro completo do treinamento e tudo relacionado a ele)
 - [ ] **Módulo completo de registro de presenças** (Inserção manual e Importação de Planilhas Excel).
 - [ ] **Funcionalidade de Importação Inteligente** de Planilhas (Drag-and-drop).
-- [ ] **Dashboard Executivo** com Gráficos interativos (Drill-down para Calendário), Radar de Risco (Lojas Omissas) e Top 5 Lojas Engajadas.
+- [ ] **Dashboard Executivo simplificado** com Gráficos interativos (Drill-down para Calendário), Radar de Risco (Lojas Omissas) e Top 5 Lojas Engajadas.
 - [ ] **Histórico de participação** integrado ao perfil da loja e cálculo de porcentagem de engajamento.
 - [ ] **Motor de geração e exportação** de relatórios em PDF (Dossiê da Loja) e Excel (.xls) com formatação da marca.
-
----
-
-## PRÓXIMAS ENTREGAS
-- [ ] **Entregável 2:** (A definir - Ex: Portal do Lojista/Lembretes automáticos).
-- [ ] **Entregável 3:** (A definir).
-- [ ] **Evoluções futuras:** Integração com controle de catracas/QR Code para check-in automático.
 
 ---
 
@@ -74,7 +68,7 @@ Desenvolver um ecossistema digital com padrão Premium para centralizar a gestã
 **Período:** 04/05 a 17/05
 
 ### OBJETIVO DA SPRINT
-Estruturar a base de dados do sistema, permitir a criação de treinamentos e entregar a funcionalidade central de apontamento de presenças, seja de forma manual ou através de importação inteligente de planilhas.
+Estruturar a base de dados do sistema, permitir a criação de treinamentos e entregar a funcionalidade central de apontamento de presenças de forma manual.
 
 ### ENTREGÁVEIS DA SPRINT
 - [ ] **Entregável 1:** Banco de Dados configurado e criação de treinamentos funcional.
