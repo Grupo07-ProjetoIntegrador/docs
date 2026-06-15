@@ -15,6 +15,6 @@ graph TB
     %% Relacionamentos
     Admin -->|Configura eventos e extrai relatórios| CoreSystem
     Lojista -->|Lê QR Code e autoriza telemetria GPS| CoreSystem
-    Lojista -->|Inscreve-se e responde avaliações| GWorkspace
+    Lojista -->|Inscreve-se e responde formulários| GWorkspace
     CoreSystem -->|Orquestra formulários e dispara e-mails em lote| GWorkspace
     GWorkspace -->|Despacha webhooks de inscrições e submissões| CoreSystem
