@@ -1,0 +1,36 @@
+graph TB
+    classDef component fill:#2b78e4,stroke:#1b4f93,color:#ffffff;
+    classDef container fill:#1168bd,stroke:#0b4e8f,color:#ffffff;
+    classDef db fill:#1e293b,stroke:#0f172a,color:#ffffff;
+
+    SPA["📱 Contêiner: Frontend SPA (React)"]:::container
+    SupabaseDB["🗄️ Contêiner: Supabase DB (Postgres)"]:::db
+
+    subgraph GoCore [⚙️ Contêiner: Core Backend Go]
+        Router["Router & Middleware Global<br/>[Mux / Chi]<br/>Trata segurança, injeção de contexto e validação de CORS."]:::component
+        DebugSwitch["Debug Handler<br/>[Componente de Infraestrutura]<br/>Chaveador global de flag que efetua bypass em validações externas em localhost."]:::component
+        TreinoHandler["Treinamento Handler<br/>[Componente de Negócio]<br/>Processa regras de CRUD de eventos e dispara gatilhos de criação de infraestrutura."]:::component
+        PresencaHandler["Presença Handler<br/>[Componente de Negócio]<br/>Garante integridade física executando o cálculo trigonométrico antifraude."]:::component
+    end
+
+    subgraph PyWorker [🐍 Contêiner: Worker API Python]
+        FastAPI["FastAPI App & BackgroundTasks<br/>[Componente de Orquestração]<br/>Recebe as requisições do Go e webhooks, empilhando tarefas assíncronas."]:::component
+        FormsHandler["Forms Handler<br/>[Componente de Integração]<br/>Estrutura os questionários dinamicamente usando google-api-python-client."]:::component
+        EmailService["Email Service<br/>[Componente de Comunicação]<br/>Consome a API do Gmail para despachar convites e recibos digitais em lote."]:::component
+        PDFEngine["PDF Engine (gerar_pdf.py)<br/>[Componente de Mídia]<br/>Materializa dados brutos em Atas Oficiais e Dossiês Crônicos."]:::component
+    end
+
+    %% Ligações de Componentes
+    SPA -->|Requisições HTTP| Router
+    Router --> DebugSwitch
+    Router --> TreinoHandler
+    Router --> PresencaHandler
+
+    PresencaHandler -->|Consulta cercas e salva presença síncrona| SupabaseDB
+    TreinoHandler -->|Aciona criação assíncrona de formulários| FastAPI
+    
+    FastAPI --> FormsHandler
+    FastAPI --> EmailService
+    FastAPI --> PDFEngine
+
+    PDFEngine -->|Varre histórico e gera relatórios de auditoria| SupabaseDB

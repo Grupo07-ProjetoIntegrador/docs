@@ -1,0 +1,32 @@
+graph TB
+    classDef person fill:#08427b,stroke:#052e56,color:#ffffff;
+    classDef container fill:#1168bd,stroke:#0b4e8f,color:#ffffff;
+    classDef db fill:#1e293b,stroke:#0f172a,color:#ffffff;
+    classDef external fill:#999999,stroke:#666666,color:#ffffff;
+
+    Admin["👤 Admin do RH<br/>[Pessoa]"]:::person
+    Lojista["👤 Lojista / Funcionário<br/>[Pessoa]"]:::person
+
+    subgraph Fronteira do Sistema [Ecossistema T&D - Shopping Flamboyant]
+        SPA["📱 Frontend SPA<br/>[React / Vite / TypeScript]<br/>Interface rica em Dark Mode corporativo. Contém o painel administrativo denso e a tela mobile-first de portaria digital."]:::container
+        GoCore["⚙️ Core Backend Gateway<br/>[Go / Golang]<br/>Processa picos massivos de concorrência. Responsável pela segurança, chaves OAuth e validação síncrona de Geofencing."]:::container
+        PyWorker["🐍 Worker Automation API<br/>[Python / FastAPI]<br/>Gerencia filas em background tasks. Responsável pelo consumo do Google SDK e a engine de renderização de PDFs."]:::container
+        SupabaseDB[("🗄️ Banco de Dados Geral<br/>[Supabase / PostgreSQL]<br/>Armazena o modelo relacional (lojas, presenças, treinamentos) e tokens de acesso.")]:::db
+    end
+
+    GAS["⚡ Google Apps Script<br/>[Contêiner Serverless Externo]<br/>Script acoplado ao Google Forms que dispara webhooks de baixa latência imediatamente após envios."]:::external
+    GWorkspace["☁️ Google APIs<br/>[Ecossistema Externo]<br/>Serviços do Gmail, Drive e Forms API."]:::external
+
+    %% Fluxos
+    Admin -->|Acessa backoffice via HTTPS| SPA
+    Lojista -->|Lê QR Code e envia GPS via portaria móvel| SPA
+    
+    SPA -->|Consome rotas síncronas e CRUD via JSON| GoCore
+    GoCore -->|Persiste dados transacionais e valida chaves| SupabaseDB
+    GoCore -->|Delega processamento pesado via HTTP POST| PyWorker
+    
+    PyWorker -->|Lê metadados e atualiza tokens| SupabaseDB
+    PyWorker -->|Consome APIs nativas e OAuth 2.0| GWorkspace
+    GWorkspace -->|Gatilha evento onFormSubmit| GAS
+    GAS -->|Encaminha payload estruturado via HTTPS| PyWorker
+    PyWorker -->|Encaminha dados limpos para persistência| GoCore
